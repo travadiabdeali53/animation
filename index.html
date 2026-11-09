@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-8</title>
+    <style>
+        .container {
+            background-color: blue;
+            height: 70vh;
+            width: 80vw;
+            position: relative;
+        }
+
+        .box {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            bottom: 0;
+            border-radius: 50%;
+            animation: animateX 10s linear infinite, 
+                        animateY 1s ease-out infinite alternate;
+        }
+
+        @keyframes animateX{
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+        @keyframes animateY{
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 80%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
